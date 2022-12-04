@@ -144,8 +144,8 @@ const summarizeString = async (text: string) => {
     },
     body: JSON.stringify({
       prompt,
-      model: "text-davinci-003",
-      max_tokens: 128,
+      model: config.model,
+      max_tokens: config.max_tokens,
     }),
   });
 
