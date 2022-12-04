@@ -146,6 +146,7 @@ const summarizeString = async (text: string) => {
       prompt,
       model: config.model,
       max_tokens: config.max_tokens,
+      temperature: config.temperature
     }),
   });
 
